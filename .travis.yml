@@ -8,6 +8,7 @@ before-install:
   - mvn clean package
   - cd ..
   - echo "We are in the Docker Folder!"
+  - echo "Waiting..."
 script:
   - docker-compose build
 before_deploy:
